@@ -19,7 +19,7 @@ def process_img(file):
         im = im.resize((600,400))
         im = im.convert("RGB")
         save_file = file.replace("tiff","jpeg")
-        im.save(destination + "/" + save_file + ".jpg", format = "jpeg")
+        im.save(destination + "/" + save_file, format = "jpeg")
 
 if __name__ == "__main__":
         source_files = get_source_files()
